@@ -17,7 +17,16 @@ connectDB();
 const app = express();
 
 // Core middleware
-app.use(cors({ origin: process.env.CLIENT_URL?.split(',') || '*' }));
+// app.use(cors({ origin: process.env.CLIENT_URL?.split(',') || '*' }));
+
+app.use(cors({
+  origin: process.env.CLIENT_URL
+    ? process.env.CLIENT_URL.split(",")
+    : "*",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
+
 app.use(express.json());
 if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'));
