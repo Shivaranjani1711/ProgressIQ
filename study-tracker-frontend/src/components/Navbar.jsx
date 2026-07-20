@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar__left">
         <Link to="/" className="navbar__logo">
-          Study Tracker
+          ProgressIQ
         </Link>
         {user && (
           <div className="navbar__links">
