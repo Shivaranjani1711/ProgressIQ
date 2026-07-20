@@ -1,0 +1,1842 @@
+[
+  {
+    "title": "Variables & Data Types",
+    "description": "Understand var/let/const, primitive vs reference types",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": null,
+    "_group": "javascript"
+  },
+  {
+    "title": "Functions & Scope",
+    "description": "Function declarations, expressions, arrow functions, and scope chains",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Variables & Data Types",
+    "_group": "javascript"
+  },
+  {
+    "title": "Closures",
+    "description": "How inner functions retain access to outer scope variables",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Functions & Scope",
+    "_group": "javascript"
+  },
+  {
+    "title": "The this Keyword",
+    "description": "How this is bound in different invocation contexts",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Closures",
+    "_group": "javascript"
+  },
+  {
+    "title": "Prototypes & Inheritance",
+    "description": "Prototype chain and classical vs prototypal inheritance",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "The this Keyword",
+    "_group": "javascript"
+  },
+  {
+    "title": "ES6+ Features",
+    "description": "let/const, template literals, arrow functions, default params",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Prototypes & Inheritance",
+    "_group": "javascript"
+  },
+  {
+    "title": "Promises",
+    "description": "Creating and chaining promises for async operations",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "ES6+ Features",
+    "_group": "javascript"
+  },
+  {
+    "title": "Async/Await",
+    "description": "Writing readable asynchronous code on top of promises",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Promises",
+    "_group": "javascript"
+  },
+  {
+    "title": "The Event Loop",
+    "description": "Call stack, task queue, and microtasks explained",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Async/Await",
+    "_group": "javascript"
+  },
+  {
+    "title": "Array Methods",
+    "description": "map, filter, reduce, and other functional array operations",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "The Event Loop",
+    "_group": "javascript"
+  },
+  {
+    "title": "Destructuring & Spread",
+    "description": "Unpacking arrays/objects and spreading values",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Array Methods",
+    "_group": "javascript"
+  },
+  {
+    "title": "ES Modules",
+    "description": "import/export syntax and module bundling basics",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Destructuring & Spread",
+    "_group": "javascript"
+  },
+  {
+    "title": "Error Handling",
+    "description": "try/catch, custom errors, and async error handling",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "ES Modules",
+    "_group": "javascript"
+  },
+  {
+    "title": "Debugging with DevTools",
+    "description": "Breakpoints, watch expressions, and the console",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Error Handling",
+    "_group": "javascript"
+  },
+  {
+    "title": "JSON & Serialization",
+    "description": "Parsing, stringifying, and working with JSON data",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Debugging with DevTools",
+    "_group": "javascript"
+  },
+  {
+    "title": "JSX & the Virtual DOM",
+    "description": "How JSX compiles and React reconciles the DOM",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": null,
+    "_group": "react"
+  },
+  {
+    "title": "Components & Props",
+    "description": "Building reusable components and passing data down",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "JSX & the Virtual DOM",
+    "_group": "react"
+  },
+  {
+    "title": "State with useState",
+    "description": "Managing local component state",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Components & Props",
+    "_group": "react"
+  },
+  {
+    "title": "useEffect & Lifecycle",
+    "description": "Side effects, dependencies, and cleanup functions",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "State with useState",
+    "_group": "react"
+  },
+  {
+    "title": "Conditional Rendering",
+    "description": "Rendering UI based on state and props",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "useEffect & Lifecycle",
+    "_group": "react"
+  },
+  {
+    "title": "Lists & Keys",
+    "description": "Rendering collections efficiently with stable keys",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Conditional Rendering",
+    "_group": "react"
+  },
+  {
+    "title": "Forms & Controlled Inputs",
+    "description": "Handling form state and validation",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Lists & Keys",
+    "_group": "react"
+  },
+  {
+    "title": "Context API",
+    "description": "Sharing state without prop drilling",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Forms & Controlled Inputs",
+    "_group": "react"
+  },
+  {
+    "title": "useRef & useMemo",
+    "description": "DOM refs and memoizing expensive computations",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Context API",
+    "_group": "react"
+  },
+  {
+    "title": "Custom Hooks",
+    "description": "Extracting and reusing stateful logic",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "useRef & useMemo",
+    "_group": "react"
+  },
+  {
+    "title": "React Router",
+    "description": "Client-side routing and protected routes",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Custom Hooks",
+    "_group": "react"
+  },
+  {
+    "title": "Performance Optimization",
+    "description": "React.memo, code-splitting, and lazy loading",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "React Router",
+    "_group": "react"
+  },
+  {
+    "title": "Error Boundaries",
+    "description": "Catching rendering errors gracefully",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Performance Optimization",
+    "_group": "react"
+  },
+  {
+    "title": "Testing React Components",
+    "description": "React Testing Library fundamentals",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Error Boundaries",
+    "_group": "react"
+  },
+  {
+    "title": "State Management (Redux/Zustand)",
+    "description": "Managing global app state at scale",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "React Documentation",
+        "url": "https://react.dev/learn",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Testing React Components",
+    "_group": "react"
+  },
+  {
+    "title": "Node.js Runtime & Event Loop",
+    "description": "How Node executes JS outside the browser",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": null,
+    "_group": "node"
+  },
+  {
+    "title": "npm & Package Management",
+    "description": "Dependencies, semver, and package.json",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Node.js Runtime & Event Loop",
+    "_group": "node"
+  },
+  {
+    "title": "File System Module",
+    "description": "Reading and writing files with fs",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "npm & Package Management",
+    "_group": "node"
+  },
+  {
+    "title": "Express Basics & Routing",
+    "description": "Setting up routes and route parameters",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "File System Module",
+    "_group": "node"
+  },
+  {
+    "title": "Middleware",
+    "description": "Request/response pipeline and custom middleware",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Express Basics & Routing",
+    "_group": "node"
+  },
+  {
+    "title": "REST API Design",
+    "description": "Resource naming, status codes, and versioning",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Middleware",
+    "_group": "node"
+  },
+  {
+    "title": "Error Handling in Express",
+    "description": "Centralized error middleware patterns",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "REST API Design",
+    "_group": "node"
+  },
+  {
+    "title": "Authentication with JWT",
+    "description": "Issuing and verifying tokens",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Error Handling in Express",
+    "_group": "node"
+  },
+  {
+    "title": "File Uploads (Multer)",
+    "description": "Handling multipart form data",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Authentication with JWT",
+    "_group": "node"
+  },
+  {
+    "title": "Environment Variables",
+    "description": "Config management with dotenv",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "File Uploads (Multer)",
+    "_group": "node"
+  },
+  {
+    "title": "Rate Limiting & Security Headers",
+    "description": "Protecting APIs from abuse",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Environment Variables",
+    "_group": "node"
+  },
+  {
+    "title": "WebSockets with Socket.io",
+    "description": "Real-time bidirectional communication",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "Node.js Documentation",
+        "url": "https://nodejs.org/en/docs",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Rate Limiting & Security Headers",
+    "_group": "node"
+  },
+  {
+    "title": "MongoDB Basics",
+    "description": "Documents, collections, and CRUD operations",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": null,
+    "_group": "database"
+  },
+  {
+    "title": "Mongoose ODM",
+    "description": "Schemas, models, and validation",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "MongoDB Basics",
+    "_group": "database"
+  },
+  {
+    "title": "Schema Design",
+    "description": "Designing documents for query patterns",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Mongoose ODM",
+    "_group": "database"
+  },
+  {
+    "title": "Indexing",
+    "description": "Speeding up queries with the right indexes",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Schema Design",
+    "_group": "database"
+  },
+  {
+    "title": "Aggregation Pipeline",
+    "description": "Multi-stage data transformation queries",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Indexing",
+    "_group": "database"
+  },
+  {
+    "title": "Embedding vs Referencing",
+    "description": "Choosing document relationships correctly",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Aggregation Pipeline",
+    "_group": "database"
+  },
+  {
+    "title": "Transactions",
+    "description": "Multi-document ACID transactions in MongoDB",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Embedding vs Referencing",
+    "_group": "database"
+  },
+  {
+    "title": "SQL Fundamentals",
+    "description": "SELECT, WHERE, JOIN, and GROUP BY basics",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Transactions",
+    "_group": "database"
+  },
+  {
+    "title": "Joins & Normalization",
+    "description": "Relational design and normal forms",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "SQL Fundamentals",
+    "_group": "database"
+  },
+  {
+    "title": "PostgreSQL Basics",
+    "description": "Setting up and querying a Postgres database",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Joins & Normalization",
+    "_group": "database"
+  },
+  {
+    "title": "Database Design Principles",
+    "description": "Choosing SQL vs NoSQL for a use case",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "PostgreSQL Basics",
+    "_group": "database"
+  },
+  {
+    "title": "Redis Caching",
+    "description": "Key-value caching to speed up repeated reads",
+    "category": "database",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "MongoDB Documentation",
+        "url": "https://www.mongodb.com/docs/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Database Design Principles",
+    "_group": "database"
+  },
+  {
+    "title": "Big-O Notation",
+    "description": "Analyzing time and space complexity",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": null,
+    "_group": "dsa"
+  },
+  {
+    "title": "Arrays & Strings",
+    "description": "Core operations and common interview patterns",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Big-O Notation",
+    "_group": "dsa"
+  },
+  {
+    "title": "Linked Lists",
+    "description": "Singly/doubly linked lists and pointer manipulation",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 6,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Arrays & Strings",
+    "_group": "dsa"
+  },
+  {
+    "title": "Stacks & Queues",
+    "description": "LIFO/FIFO structures and their applications",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Linked Lists",
+    "_group": "dsa"
+  },
+  {
+    "title": "Hash Tables",
+    "description": "Hashing, collisions, and O(1) lookups",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Stacks & Queues",
+    "_group": "dsa"
+  },
+  {
+    "title": "Trees & BSTs",
+    "description": "Traversals and binary search tree operations",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 6,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Hash Tables",
+    "_group": "dsa"
+  },
+  {
+    "title": "Graphs & Traversals",
+    "description": "BFS, DFS, and graph representations",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Trees & BSTs",
+    "_group": "dsa"
+  },
+  {
+    "title": "Recursion & Backtracking",
+    "description": "Breaking problems into subproblems",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Graphs & Traversals",
+    "_group": "dsa"
+  },
+  {
+    "title": "Sorting Algorithms",
+    "description": "Merge sort, quick sort, and complexity trade-offs",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 6,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Recursion & Backtracking",
+    "_group": "dsa"
+  },
+  {
+    "title": "Searching Algorithms",
+    "description": "Binary search and its variants",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Sorting Algorithms",
+    "_group": "dsa"
+  },
+  {
+    "title": "Dynamic Programming",
+    "description": "Memoization and tabulation techniques",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Searching Algorithms",
+    "_group": "dsa"
+  },
+  {
+    "title": "Greedy Algorithms",
+    "description": "Locally optimal choices for global solutions",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 6,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Dynamic Programming",
+    "_group": "dsa"
+  },
+  {
+    "title": "Sliding Window",
+    "description": "Efficient subarray/substring techniques",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Greedy Algorithms",
+    "_group": "dsa"
+  },
+  {
+    "title": "Two Pointers",
+    "description": "Solving array problems in linear time",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Sliding Window",
+    "_group": "dsa"
+  },
+  {
+    "title": "Heaps & Priority Queues",
+    "description": "Min/max heaps and their use cases",
+    "category": "other",
+    "difficulty": "advanced",
+    "estimatedHours": 6,
+    "resources": [
+      {
+        "title": "freeCodeCamp - DSA",
+        "url": "https://www.freecodecamp.org/news/tag/data-structures/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Two Pointers",
+    "_group": "dsa"
+  },
+  {
+    "title": "OOP Principles",
+    "description": "Encapsulation, inheritance, polymorphism, abstraction",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "CS50 (Harvard)",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": null,
+    "_group": "cs"
+  },
+  {
+    "title": "SOLID Principles",
+    "description": "Writing maintainable object-oriented code",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "CS50 (Harvard)",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "OOP Principles",
+    "_group": "cs"
+  },
+  {
+    "title": "Design Patterns",
+    "description": "Singleton, factory, observer, and other common patterns",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "CS50 (Harvard)",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "SOLID Principles",
+    "_group": "cs"
+  },
+  {
+    "title": "Operating Systems Basics",
+    "description": "Processes, threads, and memory management",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "CS50 (Harvard)",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Design Patterns",
+    "_group": "cs"
+  },
+  {
+    "title": "Computer Networks Basics",
+    "description": "TCP/IP, DNS, and HTTP fundamentals",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "CS50 (Harvard)",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Operating Systems Basics",
+    "_group": "cs"
+  },
+  {
+    "title": "Database Normalization",
+    "description": "Reducing redundancy in relational schemas",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "CS50 (Harvard)",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Computer Networks Basics",
+    "_group": "cs"
+  },
+  {
+    "title": "System Design Basics",
+    "description": "Scalability, load balancing, and caching layers",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "CS50 (Harvard)",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "Database Normalization",
+    "_group": "cs"
+  },
+  {
+    "title": "Time & Space Complexity Analysis",
+    "description": "Formally analyzing algorithm efficiency",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "CS50 (Harvard)",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+      }
+    ],
+    "_prereqTitle": "System Design Basics",
+    "_group": "cs"
+  },
+  {
+    "title": "Git & Version Control",
+    "description": "Branching, merging, and resolving conflicts",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": null,
+    "_group": "devops"
+  },
+  {
+    "title": "GitHub Workflows & PRs",
+    "description": "Collaborating with pull requests and reviews",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Git & Version Control",
+    "_group": "devops"
+  },
+  {
+    "title": "Docker Basics",
+    "description": "Containerizing an application",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "GitHub Workflows & PRs",
+    "_group": "devops"
+  },
+  {
+    "title": "Docker Compose",
+    "description": "Multi-container local development setups",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Docker Basics",
+    "_group": "devops"
+  },
+  {
+    "title": "CI/CD Pipelines",
+    "description": "Automating tests and deployments",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Docker Compose",
+    "_group": "devops"
+  },
+  {
+    "title": "Linux Command Line",
+    "description": "Navigating and scripting in a Unix shell",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "CI/CD Pipelines",
+    "_group": "devops"
+  },
+  {
+    "title": "AWS Fundamentals",
+    "description": "Core services: EC2, S3, IAM",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Linux Command Line",
+    "_group": "devops"
+  },
+  {
+    "title": "Cloud Deployment (Render/Vercel)",
+    "description": "Shipping apps to production hosts",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "AWS Fundamentals",
+    "_group": "devops"
+  },
+  {
+    "title": "Kubernetes Basics",
+    "description": "Pods, deployments, and services",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Cloud Deployment (Render/Vercel)",
+    "_group": "devops"
+  },
+  {
+    "title": "Nginx & Reverse Proxies",
+    "description": "Routing traffic and serving static assets",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Kubernetes Basics",
+    "_group": "devops"
+  },
+  {
+    "title": "Monitoring & Logging",
+    "description": "Observability for production systems",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Nginx & Reverse Proxies",
+    "_group": "devops"
+  },
+  {
+    "title": "Infrastructure as Code",
+    "description": "Managing infra with declarative config",
+    "category": "devops",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Monitoring & Logging",
+    "_group": "devops"
+  },
+  {
+    "title": "Python Syntax Basics",
+    "description": "Variables, control flow, and indentation rules",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "Python Official Docs",
+        "url": "https://docs.python.org/3/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": null,
+    "_group": "python"
+  },
+  {
+    "title": "Data Types & Collections",
+    "description": "Lists, tuples, dicts, and sets",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Python Official Docs",
+        "url": "https://docs.python.org/3/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Python Syntax Basics",
+    "_group": "python"
+  },
+  {
+    "title": "Functions & Modules",
+    "description": "Defining reusable code and importing modules",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Python Official Docs",
+        "url": "https://docs.python.org/3/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Data Types & Collections",
+    "_group": "python"
+  },
+  {
+    "title": "OOP in Python",
+    "description": "Classes, inheritance, and abstract base classes",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "Python Official Docs",
+        "url": "https://docs.python.org/3/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Functions & Modules",
+    "_group": "python"
+  },
+  {
+    "title": "File Handling",
+    "description": "Reading and writing files with context managers",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Python Official Docs",
+        "url": "https://docs.python.org/3/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "OOP in Python",
+    "_group": "python"
+  },
+  {
+    "title": "Exception Handling",
+    "description": "try/except/finally and custom exceptions",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Python Official Docs",
+        "url": "https://docs.python.org/3/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "File Handling",
+    "_group": "python"
+  },
+  {
+    "title": "List/Dict Comprehensions",
+    "description": "Concise, Pythonic data transformations",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "Python Official Docs",
+        "url": "https://docs.python.org/3/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Exception Handling",
+    "_group": "python"
+  },
+  {
+    "title": "Virtual Environments",
+    "description": "Isolating project dependencies",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Python Official Docs",
+        "url": "https://docs.python.org/3/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "List/Dict Comprehensions",
+    "_group": "python"
+  },
+  {
+    "title": "Working with APIs (requests)",
+    "description": "Making HTTP calls from Python",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Python Official Docs",
+        "url": "https://docs.python.org/3/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Virtual Environments",
+    "_group": "python"
+  },
+  {
+    "title": "Flask Basics",
+    "description": "Building a lightweight REST API",
+    "category": "language",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "Python Official Docs",
+        "url": "https://docs.python.org/3/",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Working with APIs (requests)",
+    "_group": "python"
+  },
+  {
+    "title": "HTML Semantics",
+    "description": "Writing meaningful, accessible markup",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "MDN - CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": null,
+    "_group": "frontend"
+  },
+  {
+    "title": "CSS Box Model",
+    "description": "Margin, border, padding, and content sizing",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MDN - CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "HTML Semantics",
+    "_group": "frontend"
+  },
+  {
+    "title": "Flexbox & Grid",
+    "description": "Modern CSS layout systems",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MDN - CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "CSS Box Model",
+    "_group": "frontend"
+  },
+  {
+    "title": "Responsive Design",
+    "description": "Media queries and mobile-first layouts",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "MDN - CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Flexbox & Grid",
+    "_group": "frontend"
+  },
+  {
+    "title": "CSS Preprocessors (Sass)",
+    "description": "Variables, nesting, and mixins",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MDN - CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Responsive Design",
+    "_group": "frontend"
+  },
+  {
+    "title": "Accessibility (a11y)",
+    "description": "ARIA roles and keyboard navigation",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MDN - CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "CSS Preprocessors (Sass)",
+    "_group": "frontend"
+  },
+  {
+    "title": "Web Performance",
+    "description": "Lighthouse metrics and load-time optimization",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "MDN - CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Accessibility (a11y)",
+    "_group": "frontend"
+  },
+  {
+    "title": "Browser Rendering",
+    "description": "How the browser paints a page",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "MDN - CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Web Performance",
+    "_group": "frontend"
+  },
+  {
+    "title": "TypeScript Basics",
+    "description": "Static typing on top of JavaScript",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "MDN - CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Browser Rendering",
+    "_group": "frontend"
+  },
+  {
+    "title": "Tailwind CSS",
+    "description": "Utility-first styling workflow",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "resources": [
+      {
+        "title": "MDN - CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "TypeScript Basics",
+    "_group": "frontend"
+  },
+  {
+    "title": "Unit Testing (Jest)",
+    "description": "Writing isolated tests for functions and modules",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Jest Documentation",
+        "url": "https://jestjs.io/docs/getting-started",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": null,
+    "_group": "testing"
+  },
+  {
+    "title": "Integration Testing",
+    "description": "Testing how modules work together",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Jest Documentation",
+        "url": "https://jestjs.io/docs/getting-started",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Unit Testing (Jest)",
+    "_group": "testing"
+  },
+  {
+    "title": "TDD Principles",
+    "description": "Red-green-refactor development cycle",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "Jest Documentation",
+        "url": "https://jestjs.io/docs/getting-started",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Integration Testing",
+    "_group": "testing"
+  },
+  {
+    "title": "Web Security Basics (XSS/CSRF)",
+    "description": "Common vulnerabilities and mitigations",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 3,
+    "resources": [
+      {
+        "title": "Jest Documentation",
+        "url": "https://jestjs.io/docs/getting-started",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "TDD Principles",
+    "_group": "testing"
+  },
+  {
+    "title": "OWASP Top 10",
+    "description": "Industry-standard list of web security risks",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "resources": [
+      {
+        "title": "Jest Documentation",
+        "url": "https://jestjs.io/docs/getting-started",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "Web Security Basics (XSS/CSRF)",
+    "_group": "testing"
+  },
+  {
+    "title": "API Security",
+    "description": "Rate limiting, auth, and input validation",
+    "category": "other",
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "resources": [
+      {
+        "title": "Jest Documentation",
+        "url": "https://jestjs.io/docs/getting-started",
+        "type": "doc"
+      }
+    ],
+    "_prereqTitle": "OWASP Top 10",
+    "_group": "testing"
+  }
+]

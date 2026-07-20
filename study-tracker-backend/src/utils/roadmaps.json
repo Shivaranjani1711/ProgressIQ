@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Frontend Developer",
+    "goal": "frontend",
+    "description": "Go from HTML basics to building performant, accessible React UIs.",
+    "topicGroups": ["frontend", "javascript", "react"]
+  },
+  {
+    "title": "Backend Developer (Node.js)",
+    "goal": "backend",
+    "description": "Learn to build secure, well-structured REST APIs with Node and Express.",
+    "topicGroups": ["javascript", "node", "database"]
+  },
+  {
+    "title": "Full Stack MERN Developer",
+    "goal": "fullstack",
+    "description": "The complete path: JavaScript, React, Node/Express, and MongoDB.",
+    "topicGroups": ["javascript", "frontend", "react", "node", "database"]
+  },
+  {
+    "title": "DSA & Interview Prep",
+    "goal": "fullstack",
+    "description": "Master data structures, algorithms, and complexity analysis for interviews.",
+    "topicGroups": ["cs", "dsa"]
+  },
+  {
+    "title": "DevOps Engineer",
+    "goal": "devops",
+    "description": "Containers, CI/CD, cloud deployment, and infrastructure fundamentals.",
+    "topicGroups": ["devops"]
+  },
+  {
+    "title": "Python Backend Developer",
+    "goal": "backend",
+    "description": "Python fundamentals through building and consuming REST APIs.",
+    "topicGroups": ["python", "database"]
+  },
+  {
+    "title": "Database Specialist",
+    "goal": "backend",
+    "description": "Deep dive into relational and NoSQL database design and performance.",
+    "topicGroups": ["database"]
+  },
+  {
+    "title": "Computer Science Fundamentals",
+    "goal": "fullstack",
+    "description": "The theory every engineer should know: OOP, OS, networks, system design.",
+    "topicGroups": ["cs"]
+  },
+  {
+    "title": "Web Security & Testing",
+    "goal": "fullstack",
+    "description": "Write tested code and understand common web vulnerabilities.",
+    "topicGroups": ["testing"]
+  },
+  {
+    "title": "Cloud & Deployment",
+    "goal": "devops",
+    "description": "Take an app from your laptop to production on the cloud.",
+    "topicGroups": ["devops", "database"]
+  }
+]

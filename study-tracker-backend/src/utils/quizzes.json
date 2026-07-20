@@ -1,0 +1,232 @@
+[
+  {
+    "topicTitle": "Variables & Data Types",
+    "quizTitle": "Variables & Data Types Quiz",
+    "questions": [
+      { "questionText": "Which keyword creates a block-scoped variable that cannot be reassigned?", "options": ["var", "let", "const", "function"], "correctIndex": 2, "explanation": "const declares a block-scoped binding that cannot be reassigned after initialization." },
+      { "questionText": "What does typeof null return?", "options": ["\"null\"", "\"undefined\"", "\"object\"", "\"boolean\""], "correctIndex": 2, "explanation": "typeof null returns \"object\" - a long-standing quirk in JavaScript." },
+      { "questionText": "Which of these is a primitive data type in JavaScript?", "options": ["Array", "Object", "Symbol", "Function"], "correctIndex": 2, "explanation": "Symbol is one of JavaScript's primitive types, alongside string, number, boolean, null, undefined, and bigint." },
+      { "questionText": "What will typeof undefined return?", "options": ["\"null\"", "\"undefined\"", "\"object\"", "\"NaN\""], "correctIndex": 1, "explanation": "An unassigned variable has the type undefined." }
+    ]
+  },
+  {
+    "topicTitle": "Closures",
+    "quizTitle": "Closures Quiz",
+    "questions": [
+      { "questionText": "A closure is created when...", "options": ["A function is declared using arrow syntax", "A function retains access to its outer scope's variables even after the outer function has returned", "A variable is declared with let inside a loop", "A function is passed as a callback"], "correctIndex": 1, "explanation": "Closures let an inner function 'remember' the variables from the scope it was created in." },
+      { "questionText": "function outer(){ let count=0; return function(){ count++; return count; }; } const inc = outer(); console.log(inc()); console.log(inc()); - what is logged?", "options": ["1, 1", "1, 2", "undefined, undefined", "0, 1"], "correctIndex": 1, "explanation": "Each call to inc() increments the same closed-over count variable, producing 1 then 2." },
+      { "questionText": "Closures are commonly used to implement...", "options": ["Global variables", "Data privacy / private variables", "Synchronous loops", "Type coercion"], "correctIndex": 1, "explanation": "Closures let you keep variables private, exposing only the functions that can access them." },
+      { "questionText": "Which statement about closures is true?", "options": ["Closures only work with arrow functions", "Each call to an outer function creates a new, independent closure scope", "Closures prevent garbage collection entirely", "Closures can only be created inside classes"], "correctIndex": 1, "explanation": "Every invocation of the outer function creates a fresh scope, so each closure is independent." }
+    ]
+  },
+  {
+    "topicTitle": "Promises",
+    "quizTitle": "Promises Quiz",
+    "questions": [
+      { "questionText": "What are the three states a Promise can be in?", "options": ["pending, fulfilled, rejected", "started, running, done", "open, closed, error", "sync, async, resolved"], "correctIndex": 0, "explanation": "A Promise starts pending and settles into either fulfilled or rejected." },
+      { "questionText": "Which method is used to handle a rejected Promise?", "options": [".then()", ".catch()", ".resolve()", ".finally() only"], "correctIndex": 1, "explanation": ".catch() registers a callback specifically for rejection." },
+      { "questionText": "What does Promise.all() do?", "options": ["Resolves when the first promise settles", "Resolves when all promises resolve, or rejects as soon as any one rejects", "Runs promises one after another", "Cancels all pending promises"], "correctIndex": 1, "explanation": "Promise.all waits for every promise to fulfill, but short-circuits on the first rejection." },
+      { "questionText": "What does .finally() do on a Promise chain?", "options": ["Only runs if the promise is rejected", "Runs regardless of whether the promise resolved or rejected", "Cancels the promise", "Converts the promise to synchronous code"], "correctIndex": 1, "explanation": ".finally() runs cleanup code no matter how the promise settles." }
+    ]
+  },
+  {
+    "topicTitle": "Async/Await",
+    "quizTitle": "Async/Await Quiz",
+    "questions": [
+      { "questionText": "What does the await keyword do?", "options": ["Pauses execution of the async function until the Promise settles", "Converts a callback into a promise", "Runs code in a separate thread", "Blocks the entire Node.js event loop"], "correctIndex": 0, "explanation": "await pauses only the async function itself, not the whole event loop." },
+      { "questionText": "How do you handle errors in an async/await function?", "options": [".catch() only", "A try/catch block", "An onError() callback", "You cannot handle errors with async/await"], "correctIndex": 1, "explanation": "try/catch around an awaited call catches rejected promises as thrown errors." },
+      { "questionText": "What must a function be declared as to use await inside it?", "options": ["static", "async", "sync", "deferred"], "correctIndex": 1, "explanation": "await is only valid inside a function marked async (or at the top level of a module)." },
+      { "questionText": "What does an async function always return?", "options": ["undefined", "A Promise", "The literal returned value", "An array"], "correctIndex": 1, "explanation": "Async functions always wrap their return value in a Promise, even if you return a plain value." }
+    ]
+  },
+  {
+    "topicTitle": "The Event Loop",
+    "quizTitle": "The Event Loop Quiz",
+    "questions": [
+      { "questionText": "Between microtasks (e.g. Promise callbacks) and macrotasks (e.g. setTimeout), which run first?", "options": ["Macrotasks always run first", "Microtasks are processed before the next macrotask", "They run in the same queue", "The order is random"], "correctIndex": 1, "explanation": "After each macrotask, the microtask queue is fully drained before the next macrotask runs." },
+      { "questionText": "What is the call stack?", "options": ["A queue of network requests", "The structure that tracks function calls currently executing", "A cache for variable values", "A list of imported modules"], "correctIndex": 1, "explanation": "The call stack tracks the currently executing function calls, LIFO." },
+      { "questionText": "Which of these is a macrotask?", "options": ["A Promise .then() callback", "A setTimeout callback", "process.nextTick", "An async/await continuation"], "correctIndex": 1, "explanation": "Timers like setTimeout are scheduled as macrotasks." },
+      { "questionText": "Why is JavaScript described as single-threaded with a non-blocking model?", "options": ["It runs on multiple CPU cores simultaneously", "It uses one call stack but offloads async operations (I/O, timers) so the stack isn't blocked", "It cannot run any asynchronous code", "It compiles to multiple threads automatically"], "correctIndex": 1, "explanation": "The runtime hands off I/O and timers to the environment, freeing the single call stack." }
+    ]
+  },
+  {
+    "topicTitle": "Array Methods",
+    "quizTitle": "Array Methods Quiz",
+    "questions": [
+      { "questionText": "Which method creates a new array by applying a function to every element, without mutating the original?", "options": ["forEach", "map", "splice", "push"], "correctIndex": 1, "explanation": "map returns a new array; it never mutates the original." },
+      { "questionText": "What does Array.prototype.reduce() do?", "options": ["Removes duplicate elements", "Executes a reducer function to accumulate array values into a single result", "Sorts the array in place", "Filters out falsy values"], "correctIndex": 1, "explanation": "reduce folds an array down to a single accumulated value." },
+      { "questionText": "Which array method returns a new array containing only elements that pass a test?", "options": ["map", "filter", "find", "some"], "correctIndex": 1, "explanation": "filter keeps only the elements for which the callback returns true." },
+      { "questionText": "What does Array.prototype.find() return?", "options": ["A boolean", "The index of the first match", "The first element that satisfies the test function", "An array of all matches"], "correctIndex": 2, "explanation": "find returns the first matching element itself, or undefined if none match." }
+    ]
+  },
+  {
+    "topicTitle": "JSX & the Virtual DOM",
+    "quizTitle": "JSX & Virtual DOM Quiz",
+    "questions": [
+      { "questionText": "JSX is...", "options": ["A templating engine unique to Vue", "A syntax extension that lets you write HTML-like code in JavaScript", "A CSS preprocessor", "A database query language"], "correctIndex": 1, "explanation": "JSX compiles down to React.createElement calls." },
+      { "questionText": "Why does React use a Virtual DOM?", "options": ["To replace the browser entirely", "To efficiently calculate minimal real DOM updates by diffing virtual trees", "To store data permanently", "To avoid using JavaScript"], "correctIndex": 1, "explanation": "Diffing virtual trees lets React batch and minimize expensive real DOM operations." },
+      { "questionText": "What must a JSX expression always have at its root?", "options": ["Multiple sibling elements without a wrapper", "A single root element (or Fragment)", "A <div> specifically", "A return statement inside JSX"], "correctIndex": 1, "explanation": "JSX must return one enclosing element or a Fragment (<>...</>)." },
+      { "questionText": "How do you embed a JavaScript expression inside JSX?", "options": ["Using {} curly braces", "Using () parentheses", "Using [] square brackets", "Using <% %> tags"], "correctIndex": 0, "explanation": "Curly braces let you drop any JS expression into JSX markup." }
+    ]
+  },
+  {
+    "topicTitle": "State with useState",
+    "quizTitle": "useState Quiz",
+    "questions": [
+      { "questionText": "What does calling the setter function returned by useState do?", "options": ["Immediately mutates the variable and re-renders synchronously", "Schedules a state update and triggers a re-render", "Deletes the state", "Only works inside useEffect"], "correctIndex": 1, "explanation": "State updates are scheduled, not synchronous, and cause React to re-render the component." },
+      { "questionText": "What is returned by useState(initialValue)?", "options": ["Just the current value", "An array with [currentValue, setterFunction]", "An object with get/set methods", "A Promise"], "correctIndex": 1, "explanation": "useState returns a two-element array, conventionally destructured as [value, setValue]." },
+      { "questionText": "Why shouldn't you mutate state directly (e.g. array.push()) in React?", "options": ["It's fine to mutate as long as the component re-renders", "React relies on new references to detect changes and re-render correctly", "JavaScript doesn't allow mutation", "It throws a runtime error immediately"], "correctIndex": 1, "explanation": "React compares references to decide whether to re-render, so mutating in place can be missed." },
+      { "questionText": "If you call the state setter with the same value as the current state, what typically happens?", "options": ["React always re-renders anyway", "React may bail out of re-rendering since the value hasn't changed", "It throws an error", "The component unmounts"], "correctIndex": 1, "explanation": "React can skip a re-render when the new state is Object.is-equal to the old state." }
+    ]
+  },
+  {
+    "topicTitle": "useEffect & Lifecycle",
+    "quizTitle": "useEffect & Lifecycle Quiz",
+    "questions": [
+      { "questionText": "When does a useEffect with an empty dependency array [] run?", "options": ["On every render", "Only once, after the initial render", "Never", "Before the component mounts"], "correctIndex": 1, "explanation": "An empty dependency array means the effect has no reactive values, so it runs once after mount." },
+      { "questionText": "What is the purpose of the cleanup function returned from useEffect?", "options": ["To reset all state", "To clean up subscriptions/timers before the effect re-runs or the component unmounts", "To force a re-render", "To fetch data"], "correctIndex": 1, "explanation": "The cleanup function prevents leaks like dangling timers or subscriptions." },
+      { "questionText": "If you omit the dependency array entirely from useEffect, when does it run?", "options": ["Only once", "Never", "After every render", "Only when props change"], "correctIndex": 2, "explanation": "No dependency array means the effect re-runs after every render." },
+      { "questionText": "Which is a common use case for useEffect?", "options": ["Defining component styles", "Fetching data from an API when the component mounts", "Declaring a component's props", "Compiling JSX"], "correctIndex": 1, "explanation": "Data fetching is a classic side effect handled in useEffect." }
+    ]
+  },
+  {
+    "topicTitle": "React Router",
+    "quizTitle": "React Router Quiz",
+    "questions": [
+      { "questionText": "Which component is used to define a client-side route in React Router v6?", "options": ["<Router>", "<Route>", "<Link>", "<Switch>"], "correctIndex": 1, "explanation": "<Route> maps a path to an element to render." },
+      { "questionText": "What does the <Link> component do that a plain <a> tag doesn't?", "options": ["Nothing different", "Navigates without a full page reload", "Adds CSS automatically", "Opens links in a new tab by default"], "correctIndex": 1, "explanation": "<Link> updates the URL and view client-side, avoiding a full page reload." },
+      { "questionText": "How do you access URL parameters (e.g. /users/:id) in a component?", "options": ["useState", "The useParams hook", "useContext", "props.location only"], "correctIndex": 1, "explanation": "useParams returns an object of the route's dynamic segments." },
+      { "questionText": "What does useNavigate() return?", "options": ["The current URL", "A function to programmatically navigate to a new route", "The route history array", "A boolean for auth status"], "correctIndex": 1, "explanation": "Calling the function returned by useNavigate() pushes a new entry onto the history stack." }
+    ]
+  },
+  {
+    "topicTitle": "Express Basics & Routing",
+    "quizTitle": "Express Basics & Routing Quiz",
+    "questions": [
+      { "questionText": "What does app.get('/users', handler) define?", "options": ["A POST route", "A route that responds to GET requests at /users", "A database query", "A middleware function only"], "correctIndex": 1, "explanation": "app.get registers a handler for GET requests to that path." },
+      { "questionText": "What object gives you access to the incoming request's data (body, params, query)?", "options": ["res", "req", "next", "app"], "correctIndex": 1, "explanation": "req represents the incoming HTTP request and carries its data." },
+      { "questionText": "How do you define a route parameter in Express?", "options": ["/users/{id}", "/users/:id", "/users/[id]", "/users/<id>"], "correctIndex": 1, "explanation": "A colon prefix marks a segment as a named route parameter." },
+      { "questionText": "What does res.json(data) do?", "options": ["Renders an HTML template", "Sends a JSON response and sets the Content-Type header", "Parses incoming JSON", "Logs data to the console"], "correctIndex": 1, "explanation": "res.json serializes data and sends it with the correct Content-Type." }
+    ]
+  },
+  {
+    "topicTitle": "Middleware",
+    "quizTitle": "Express Middleware Quiz",
+    "questions": [
+      { "questionText": "What is Express middleware?", "options": ["A database connector", "A function with access to req, res, and next that can run code before the final handler", "A frontend framework", "A type of HTTP request"], "correctIndex": 1, "explanation": "Middleware functions form a pipeline that requests pass through." },
+      { "questionText": "What happens if a middleware function doesn't call next() or send a response?", "options": ["The request continues automatically", "The request hangs indefinitely", "Express throws a syntax error", "The server crashes immediately"], "correctIndex": 1, "explanation": "Without next() or a response, the request never completes." },
+      { "questionText": "Where is error-handling middleware typically placed in an Express app?", "options": ["Before all other middleware", "After all other routes and middleware", "Inside package.json", "It doesn't need a specific place"], "correctIndex": 1, "explanation": "Error middleware must be registered last so errors from earlier handlers reach it." },
+      { "questionText": "Which of these is an example of built-in Express middleware?", "options": ["express.json()", "mongoose.connect()", "jwt.sign()", "bcrypt.hash()"], "correctIndex": 0, "explanation": "express.json() is built into Express for parsing JSON request bodies." }
+    ]
+  },
+  {
+    "topicTitle": "Authentication with JWT",
+    "quizTitle": "JWT Authentication Quiz",
+    "questions": [
+      { "questionText": "What are the three parts of a JWT?", "options": ["Header, Payload, Signature", "Key, Value, Salt", "Header, Body, Footer", "Token, User, Secret"], "correctIndex": 0, "explanation": "A JWT is three base64url segments joined by dots: header.payload.signature." },
+      { "questionText": "Where is a JWT commonly sent from the client on subsequent requests?", "options": ["In the URL path", "In the Authorization header as a Bearer token", "In a cookie only, never a header", "In the request body always"], "correctIndex": 1, "explanation": "The Authorization: Bearer <token> header is the standard convention." },
+      { "questionText": "What does hashing a password with bcrypt before storing it protect against?", "options": ["Nothing, it's just obfuscation", "Exposure of the plaintext password if the database is compromised", "Network sniffing", "SQL injection"], "correctIndex": 1, "explanation": "Even if the database leaks, attackers only get the hash, not the original password." },
+      { "questionText": "Is a JWT's payload encrypted by default?", "options": ["Yes, fully encrypted", "No, it's base64-encoded and readable, but its signature prevents tampering", "Yes, but only the header", "No, and the signature can be forged easily by anyone"], "correctIndex": 1, "explanation": "Anyone can decode a JWT payload; the signature only guarantees it hasn't been altered." }
+    ]
+  },
+  {
+    "topicTitle": "MongoDB Basics",
+    "quizTitle": "MongoDB Basics Quiz",
+    "questions": [
+      { "questionText": "What is the basic unit of data storage in MongoDB called?", "options": ["Row", "Document", "Record", "Tuple"], "correctIndex": 1, "explanation": "MongoDB stores data as documents, grouped into collections." },
+      { "questionText": "What is a collection in MongoDB analogous to in a relational database?", "options": ["A column", "A table", "A database", "A primary key"], "correctIndex": 1, "explanation": "A collection groups documents the way a table groups rows." },
+      { "questionText": "What format does MongoDB store documents in internally?", "options": ["XML", "CSV", "BSON", "YAML"], "correctIndex": 2, "explanation": "BSON is a binary-encoded superset of JSON used internally by MongoDB." },
+      { "questionText": "Which of these correctly finds documents where age is greater than 18?", "options": ["db.users.find({age: {$gt: 18}})", "db.users.find({age: \">18\"})", "db.users.select(age > 18)", "db.users.query({age: 18})"], "correctIndex": 0, "explanation": "MongoDB uses query operators like $gt inside the filter object." }
+    ]
+  },
+  {
+    "topicTitle": "Mongoose ODM",
+    "quizTitle": "Mongoose ODM Quiz",
+    "questions": [
+      { "questionText": "What is a Mongoose Schema used for?", "options": ["Styling the frontend", "Defining the shape and validation rules of documents in a collection", "Writing SQL queries", "Managing environment variables"], "correctIndex": 1, "explanation": "A Schema defines fields, types, and validation for documents." },
+      { "questionText": "What does mongoose.model('User', userSchema) do?", "options": ["Deletes the User collection", "Compiles a schema into a usable Model bound to the \"users\" collection", "Connects to MongoDB", "Creates a new database"], "correctIndex": 1, "explanation": "Models are the interface used to create, query, and update documents." },
+      { "questionText": "Which Mongoose feature lets you run code automatically before saving a document (e.g. hashing a password)?", "options": ["Virtuals", "Pre-save hooks (middleware)", "Populate", "Discriminators"], "correctIndex": 1, "explanation": "A pre('save') hook runs custom logic just before a document is persisted." },
+      { "questionText": "What does .populate() do in Mongoose?", "options": ["Fills empty fields with default values", "Replaces a referenced ObjectId with the actual document it points to", "Validates a document", "Deletes unused fields"], "correctIndex": 1, "explanation": "populate() resolves references to their full documents, similar to a join." }
+    ]
+  },
+  {
+    "topicTitle": "Big-O Notation",
+    "quizTitle": "Big-O Notation Quiz",
+    "questions": [
+      { "questionText": "What does Big-O notation describe?", "options": ["The exact runtime in seconds", "The upper bound growth rate of an algorithm's time or space as input size grows", "The programming language's speed", "The number of lines of code"], "correctIndex": 1, "explanation": "Big-O describes how resource usage scales with input size, not exact timing." },
+      { "questionText": "What is the time complexity of accessing an element in an array by index?", "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"], "correctIndex": 0, "explanation": "Array indexing is a direct memory offset calculation, constant time." },
+      { "questionText": "What is the time complexity of a simple nested loop over an array of size n?", "options": ["O(n)", "O(log n)", "O(n^2)", "O(1)"], "correctIndex": 2, "explanation": "A loop inside a loop, each running n times, gives n * n operations." },
+      { "questionText": "Which of these complexities grows the slowest as n increases?", "options": ["O(n^2)", "O(n log n)", "O(log n)", "O(2^n)"], "correctIndex": 2, "explanation": "Logarithmic growth is far slower than linear, quadratic, or exponential growth." }
+    ]
+  },
+  {
+    "topicTitle": "Arrays & Strings",
+    "quizTitle": "Arrays & Strings Quiz",
+    "questions": [
+      { "questionText": "What is the time complexity of inserting an element at the beginning of an array?", "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"], "correctIndex": 1, "explanation": "Every existing element must shift by one position, taking linear time." },
+      { "questionText": "What is a common technique to check if a string is a palindrome efficiently?", "options": ["Sorting the string first", "Using two pointers from opposite ends comparing characters", "Converting to an array of numbers", "Using recursion only"], "correctIndex": 1, "explanation": "Two pointers moving inward compare characters in linear time." },
+      { "questionText": "Strings in JavaScript are:", "options": ["Mutable", "Immutable", "Sometimes mutable", "Only mutable in strict mode"], "correctIndex": 1, "explanation": "String operations always return a new string rather than modifying the original." },
+      { "questionText": "What does 'hello'.split('') do in JavaScript?", "options": ["Joins characters into one string", "Converts the string into an array of its characters", "Removes whitespace", "Reverses the string"], "correctIndex": 1, "explanation": "Splitting on an empty string breaks it into an array of individual characters." }
+    ]
+  },
+  {
+    "topicTitle": "Linked Lists",
+    "quizTitle": "Linked Lists Quiz",
+    "questions": [
+      { "questionText": "What is the main advantage of a linked list over an array for insertion?", "options": ["Faster random access", "Insertion/deletion at a known position can be O(1) without shifting elements", "Uses less memory always", "Automatically sorted"], "correctIndex": 1, "explanation": "Linked lists avoid the shifting cost that arrays incur on insertion." },
+      { "questionText": "What does each node in a singly linked list typically contain?", "options": ["Only data", "Data and a reference/pointer to the next node", "Two pointers: next and previous", "An index number"], "correctIndex": 1, "explanation": "A singly linked list node holds its value plus a pointer to the next node." },
+      { "questionText": "What is the time complexity of accessing the nth element in a singly linked list?", "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"], "correctIndex": 1, "explanation": "You must traverse from the head, one node at a time, to reach the nth node." },
+      { "questionText": "What distinguishes a doubly linked list from a singly linked list?", "options": ["It has no head node", "Each node has pointers to both the next and previous nodes", "It cannot be traversed backward", "It stores data in an array"], "correctIndex": 1, "explanation": "Doubly linked lists allow traversal in both directions via next and prev pointers." }
+    ]
+  },
+  {
+    "topicTitle": "Sorting Algorithms",
+    "quizTitle": "Sorting Algorithms Quiz",
+    "questions": [
+      { "questionText": "What is the average time complexity of Quick Sort?", "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"], "correctIndex": 1, "explanation": "Quick Sort averages O(n log n), though its worst case is O(n^2)." },
+      { "questionText": "Which sorting algorithm repeatedly divides the array in half, sorts each half, then merges them?", "options": ["Bubble Sort", "Merge Sort", "Insertion Sort", "Selection Sort"], "correctIndex": 1, "explanation": "Merge Sort is a classic divide-and-conquer algorithm." },
+      { "questionText": "What is the worst-case time complexity of Bubble Sort?", "options": ["O(n log n)", "O(n)", "O(n^2)", "O(1)"], "correctIndex": 2, "explanation": "Bubble Sort's repeated full passes give it quadratic worst-case time." },
+      { "questionText": "Which property describes a sorting algorithm that preserves the relative order of equal elements?", "options": ["In-place", "Stable", "Adaptive", "Recursive"], "correctIndex": 1, "explanation": "A stable sort never reorders elements that compare as equal." }
+    ]
+  },
+  {
+    "topicTitle": "OOP Principles",
+    "quizTitle": "OOP Principles Quiz",
+    "questions": [
+      { "questionText": "What does encapsulation mean in OOP?", "options": ["Creating multiple classes", "Bundling data and methods together while restricting direct access to internal state", "Allowing a class to inherit from multiple classes", "Converting objects to JSON"], "correctIndex": 1, "explanation": "Encapsulation hides internal state behind a controlled interface." },
+      { "questionText": "What is polymorphism?", "options": ["The ability of different classes to be treated through a common interface, typically by overriding methods", "Creating private variables", "Combining two classes into one", "Converting a class into a function"], "correctIndex": 0, "explanation": "Polymorphism lets objects of different types respond to the same method call in their own way." },
+      { "questionText": "What is inheritance in OOP?", "options": ["A mechanism where a class derives properties and behavior from another class", "A way to hide data", "A type of loop", "A design pattern for databases"], "correctIndex": 0, "explanation": "Inheritance lets a subclass reuse and extend a parent class's behavior." },
+      { "questionText": "What does abstraction mean in OOP?", "options": ["Exposing all implementation details", "Hiding complex implementation details and exposing only essential features", "Making all methods static", "Removing all classes"], "correctIndex": 1, "explanation": "Abstraction simplifies interaction by hiding unnecessary complexity behind a clean interface." }
+    ]
+  },
+  {
+    "topicTitle": "Git & Version Control",
+    "quizTitle": "Git & Version Control Quiz",
+    "questions": [
+      { "questionText": "What does git commit do?", "options": ["Uploads code to GitHub", "Saves a snapshot of staged changes to the local repository history", "Deletes uncommitted changes", "Creates a new branch"], "correctIndex": 1, "explanation": "A commit is a local snapshot; pushing is a separate step that uploads it." },
+      { "questionText": "What is the difference between git merge and git rebase?", "options": ["There is no difference", "Merge combines histories with a merge commit; rebase replays commits onto a new base for a linear history", "Rebase is only for deleting branches", "Merge deletes the source branch automatically"], "correctIndex": 1, "explanation": "Merge preserves both histories with a merge commit; rebase rewrites commit history to be linear." },
+      { "questionText": "What does git clone do?", "options": ["Creates a new branch", "Copies a remote repository to your local machine", "Deletes a repository", "Merges two branches"], "correctIndex": 1, "explanation": "Cloning downloads the full repository history to a new local copy." },
+      { "questionText": "What is a merge conflict?", "options": ["A syntax error in code", "When Git cannot automatically reconcile differing changes to the same lines and needs manual resolution", "A network failure during push", "A missing commit message"], "correctIndex": 1, "explanation": "Conflicts happen when two branches change the same lines differently and Git can't auto-resolve it." }
+    ]
+  },
+  {
+    "topicTitle": "HTML Semantics",
+    "quizTitle": "HTML Semantics Quiz",
+    "questions": [
+      { "questionText": "Which tag is the semantically correct choice for a page's main navigation links?", "options": ["<div>", "<nav>", "<span>", "<section>"], "correctIndex": 1, "explanation": "<nav> explicitly marks a block of navigation links." },
+      { "questionText": "Why use semantic HTML tags like <article> and <header> instead of generic <div>s?", "options": ["They load faster", "They improve accessibility and SEO by conveying meaning about content structure", "They are required for CSS to work", "They automatically add styling"], "correctIndex": 1, "explanation": "Semantic tags give assistive technology and search engines structural meaning." },
+      { "questionText": "Which tag represents a self-contained piece of content that could be distributed independently, like a blog post?", "options": ["<section>", "<article>", "<aside>", "<div>"], "correctIndex": 1, "explanation": "<article> is meant for standalone, independently distributable content." },
+      { "questionText": "What is the purpose of the alt attribute on an <img> tag?", "options": ["To set the image size", "To provide alternative text for accessibility and when the image fails to load", "To link the image", "To apply a filter"], "correctIndex": 1, "explanation": "alt text is read by screen readers and shown if the image can't load." }
+    ]
+  },
+  {
+    "topicTitle": "Flexbox & Grid",
+    "quizTitle": "Flexbox & Grid Quiz",
+    "questions": [
+      { "questionText": "In Flexbox, which property controls the direction items are laid out (row vs column)?", "options": ["justify-content", "flex-direction", "align-items", "flex-wrap"], "correctIndex": 1, "explanation": "flex-direction sets the main axis as row or column." },
+      { "questionText": "In CSS Grid, which property defines the number and size of columns?", "options": ["grid-template-columns", "grid-auto-flow", "grid-gap", "justify-items"], "correctIndex": 0, "explanation": "grid-template-columns explicitly defines the column tracks." },
+      { "questionText": "Which Flexbox property aligns items along the main axis?", "options": ["align-items", "justify-content", "flex-wrap", "order"], "correctIndex": 1, "explanation": "justify-content controls alignment along the main axis; align-items handles the cross axis." },
+      { "questionText": "When would you typically prefer CSS Grid over Flexbox?", "options": ["For simple one-dimensional layouts", "For complex two-dimensional layouts (rows and columns simultaneously)", "Grid always replaces Flexbox, never use Flexbox", "Only for text styling"], "correctIndex": 1, "explanation": "Grid excels at two-dimensional layouts; Flexbox is better suited to one-dimensional flows." }
+    ]
+  }
+]
